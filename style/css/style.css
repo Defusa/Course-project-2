@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.first-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../src/banners/bg-page-one.png);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+body {
+  font-family: Roboto;
+}
+
 header {
   min-height: 100px;
 }
@@ -7,14 +17,36 @@ li a:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: #6F097A;
-  transform-origin: right;
   scale: 1.05;
 }
+@media screen and (width <= 992px) {
+  li a:hover {
+    transform-origin: right;
+  }
+}
 
-.first-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../src/banners/bg-page-one.png);
-  background-size: cover;
-  background-blend-mode: darken;
+section {
+  width: 100%;
+  min-height: 765px;
+}
+@media screen and (width <= 992px) {
+  section {
+    min-height: 600px;
+  }
+}
+@media screen and (width <= 768px) {
+  section {
+    min-height: 550px;
+  }
+}
+
+.our-service-cards {
+  width: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.our-service-cards-text {
+  margin-bottom: 1.5rem;
 }
 
 /*!

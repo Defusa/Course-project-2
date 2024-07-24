@@ -11,7 +11,7 @@
     <header class="bg-light">
         <nav class="navbar navbar-expand-lg navbar-height">
             <div class="container-fluid ">
-                <div class="navbar-brand"><img src="src/logo/main-logo.svg" alt=""></div>
+                <div class="navbar-brand"><img src="src/logo/main-logo.svg" alt="logo"></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -31,52 +31,62 @@
 
     <main>
 
-        <div class="container-fluid first-banner d-flex flex-column justify-content-center align-items-center text-secondary" style="width: 100%; height: 765px;">
-            <h1>Рекламное агентство</h1>
-            <p class="text-center">Партнер в творческих решениях для сувенирной продукции, широкоформатной печати, полиграфии и дизайна. Доверьте нам создание уникальных и запоминающихся идей для успешной рекламы!</p>
-            <button>Обратная связь</button>
-        </div>
+        <section class="container-fluid first-banner d-grid gap-2 text-center text-secondary">
+            <div class="row justify-content-center align-content-end">
+              <h1 class="col-lg-6 col-md-12 fs-1">Рекламное агентство</h1>
+            </div>
+            <div class="row justify-content-center align-content-center">
+              <p class="col-lg-6 col-md-12 fs-4">Партнер в творческих решениях для сувенирной продукции, широкоформатной печати, полиграфии и дизайна. Доверьте нам создание уникальных и запоминающихся идей для успешной рекламы!</p>
+            </div>
+            <div class="row justify-content-center align-content-start">
+              <button class="btn btn-outline-primary rounded-pill px-5 col-lg-3 col-md-6 col-sm-8 col-10" type="button" style="--bs-btn-bg: #f8f8f8;--bs-btn-hover-color: #5b0664; --bs-btn-hover-bg: #EEEEEE">Обратная связь</button>
+            </div>
+        </section>
 
-        <div class="container-fluid my-3">
-            <div class="row">
-              <div class="col-xl-4 col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-                <img src="src/icons/gift-box-icon 1.svg" alt="">
-                <p>
+        <section class="container-fluid my-3">
+            <h1 class="m-5 text-center">Услуги</h1>
+            <div class="row my-3 ">
+              <div class="col-xl-4 col-lg-6 col-md-12 px-5 d-flex flex-column align-items-center">
+                <object class="our-service-cards" type="image/svg+xml" data="src/icons/gift-box-icon 1.svg"> </object>
+                <p class="our-service-cards-text">
                     Мы делаем разные сувениры, используя разные способы печати. У нас есть уникальные вещи разных стилей и материалов. Мы помогаем воплотить ваши идеи в качественные сувениры.
                 </p>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-                <img src="src/icons/Graphics-design-icon 1.svg" alt="">
-                <p>
+              <div class="col-xl-4 col-lg-6 col-md-12 px-5 d-flex flex-column align-items-center">
+                <object class="our-service-cards" type="image/svg+xml" data="src/icons/Graphics-design-icon 1.svg"> </object>
+                <p class="our-service-cards-text">
                     Наша команда дизайнеров готова вам помочь в создании дизайна для полиграфии, широкоформатных проектов и логотипов. Мы охватываем широкий спектр дизайнерских услуг, чтобы поддержать вас в любом проекте, от печати до создания уникального брендового стиля.
                 </p>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-                <img src="src/icons/Plotter-icon 1.svg" alt="">
-                <p>
+              <div class="col-xl-4 col-lg-6 col-md-12 px-5 d-flex flex-column align-items-center">
+                <object class="our-service-cards" type="image/svg+xml" data="src/icons/Plotter-icon 1.svg"> </object>
+                <p class="our-service-cards-text">
                     Наши возможности в широкоформатной печати позволяют воплотить ваши идеи в крупных масштабах. Независимо от того, нужен ли вам баннер, постер или другие большие графические изображения, наша команда готова обеспечить вас высококачественной широкоформатной печатью.
                 </p>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-                <img src="src/icons/megaphone-icon 1.svg" alt="">
-                <p>
+              <div class="col-xl-4 col-lg-6 col-md-12 px-5 d-flex flex-column align-items-center">
+                <object class="our-service-cards" type="image/svg+xml" data="src/icons/megaphone-icon 1.svg"> </object>
+                <p class="our-service-cards-text">
                     Наша команда активно организует разнообразные промоакции, включая распространение листовок и проведение дегустаций. Мы стремимся максимально привлечь внимание вашей целевой аудитории через креативные и вкусные инициативы.
                 </p>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-                <img src="src/icons/Text-icon 1.svg" alt="">
-                <p>
+              <div class="col-xl-4 col-lg-6 col-md-12 px-5 d-flex flex-column align-items-center">
+                <object class="our-service-cards" type="image/svg+xml" data="src/icons/Text-icon 1.svg"> </object>
+                <p class="our-service-cards-text">
                     Наши полиграфические услуги включают в себя печать разнообразных материалов, от визиток и брошюр до постеров и каталогов. С использованием высококачественных технологий мы обеспечиваем четкость и яркость каждого отпечатка, придавая вашим материалам профессиональный и внушительный вид.
                 </p>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-                <img src="src/icons/baloons-icon 1.svg" alt="">
-                <p>
+              <div class="col-xl-4 col-lg-6 col-md-12 px-5 d-flex flex-column align-items-center">
+                <object class="our-service-cards" type="image/svg+xml" data="src/icons/baloons-icon 1.svg"> </object>
+                <p class="our-service-cards-text">
                     Наши эвент-услуги предлагают полный спектр развлекательных возможностей для вашего мероприятия. От яркого аквагрима, живописных аниматоров до профессиональных ведущих – мы заботимся о создании неповторимой и атмосферной программы. Позвольте нам воплотить ваши идеи в яркое и увлекательное событие!
                 </p>
               </div>
             </div>
-          </div>
+            <div class="d-grid col-6 mx-auto">
+              <button class="btn btn-outline-primary rounded-pill" type="button">Ознакомиться с услугами подробнее</button>
+            </div>
+        </section>
 
 
     </main>
