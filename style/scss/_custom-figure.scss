@@ -1,0 +1,68 @@
+.figure-space {
+    width: 50%;
+    height: inherit;
+    position: relative;
+    margin: 0 auto;
+
+    .line {
+        position: relative;
+        border: #8F8F8F 1px solid;
+        width: 2px;
+        height: 60vh;
+        min-height: 535px;
+        left: 50%;
+        z-index: -1;
+    }
+    
+    .super-form {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: #8F8F8F 1px solid;
+        color: #8F8F8F;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: absolute;
+        left: calc(50% - 50px);
+    }
+    
+    #top {
+        top: 0;
+    }
+
+    // Решение через афтер не имеет смысла и реализации в данной ситуации. Нужно переделать блок полностью. Скорее всего нужно объеденить в контейнер текст и его кружок, когда экран будет маленький, то поменять просто order. Переделать позже.
+    // #top::after {
+    
+    // }
+    
+    #middle {
+        top: calc(50% - 50px);
+    }
+    
+    #bottom {
+        bottom: 0;
+    }
+    
+    
+    @media screen and (width <= 992px) {
+        
+        margin: 0;
+
+        .line {
+            display: none;
+        }
+    
+        .super-form {
+            width: 70px;
+            height: 70px;
+            position: static;
+            margin: 3rem;
+        }
+    
+    }
+}
+
+
