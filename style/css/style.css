@@ -47,12 +47,30 @@ section {
 }
 
 .our-service-cards {
-  width: 50%;
+  width: 40%;
   margin-bottom: 1.5rem;
 }
 
 .our-service-cards-text {
   margin-bottom: 1.5rem;
+}
+
+.why-us-svg {
+  width: 50%;
+}
+@media screen and (width <= 992px) {
+  .why-us-svg {
+    width: 100%;
+  }
+}
+@media screen and (width < 768px) {
+  .why-us-svg {
+    display: none;
+  }
+}
+
+.our-team-photo {
+  max-width: 300px;
 }
 
 .figure-space {

@@ -16,10 +16,26 @@ section {
 // Подброная инструкция https://svgontheweb.com/ru/
 // SVG в img сильно ограничен, не поддерживает анимации, которые мне нужны. Но пока нет времени этим заниматься.
 .our-service-cards {
-    width: 50%;
+    width: 40%;
     margin-bottom: 1.5rem;
 }
 
 .our-service-cards-text {
     margin-bottom: 1.5rem;
+}
+
+.why-us-svg {
+    width: 50%;
+
+    @media screen and (width <= 992px) {
+        width: 100%;        
+    }
+
+    @media screen and (width < 768px) {
+        display: none;
+    }
+}
+
+.our-team-photo {
+    max-width: 300px;
 }
