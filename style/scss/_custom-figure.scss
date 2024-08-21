@@ -1,4 +1,5 @@
 .figure-space {
+    // background: #7a7a7a;
     width: 50%;
     height: inherit;
     position: relative;
@@ -13,6 +14,26 @@
         left: 50%;
         z-index: -1;
     }
+
+    .figure {
+        position: absolute;
+        justify-content: space-between;
+        
+        
+        &:nth-child(even) {
+            right: calc(50% - 50px);
+            
+            p {
+                order: -1;
+            }
+        }
+
+        &:nth-child(odd) {
+            left: calc(50% - 50px);
+        }
+    }
+
+    
     
     .super-form {
         width: 100px;
@@ -23,10 +44,7 @@
         background-color: #f8f8f8;
         display: flex;
         justify-content: center;
-        align-items: center;
-    
-        position: absolute;
-        left: calc(50% - 50px);
+        align-items: center;    
     }
     
     #top {
@@ -49,16 +67,21 @@
     
     @media screen and (width <= 992px) {
         
+        width: 75%;
         margin: 0;
 
         .line {
             display: none;
         }
+
+        .figure {
+            position: static;
+            justify-content: start;
+        }
     
         .super-form {
             width: 70px;
             height: 70px;
-            position: static;
             margin: 3rem;
         }
     

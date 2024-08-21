@@ -92,6 +92,19 @@ section {
   left: 50%;
   z-index: -1;
 }
+.figure-space .figure {
+  position: absolute;
+  justify-content: space-between;
+}
+.figure-space .figure:nth-child(even) {
+  right: calc(50% - 50px);
+}
+.figure-space .figure:nth-child(even) p {
+  order: -1;
+}
+.figure-space .figure:nth-child(odd) {
+  left: calc(50% - 50px);
+}
 .figure-space .super-form {
   width: 100px;
   height: 100px;
@@ -102,8 +115,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: calc(50% - 50px);
 }
 .figure-space #top {
   top: 0;
@@ -116,15 +127,19 @@ section {
 }
 @media screen and (width <= 992px) {
   .figure-space {
+    width: 75%;
     margin: 0;
   }
   .figure-space .line {
     display: none;
   }
+  .figure-space .figure {
+    position: static;
+    justify-content: start;
+  }
   .figure-space .super-form {
     width: 70px;
     height: 70px;
-    position: static;
     margin: 3rem;
   }
 }
