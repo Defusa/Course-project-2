@@ -19,6 +19,10 @@ header {
   min-height: 100px;
 }
 
+footer {
+  background-image: linear-gradient(rgba(111, 9, 122, 0.7), rgba(111, 9, 122, 0.8));
+}
+
 li a:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
